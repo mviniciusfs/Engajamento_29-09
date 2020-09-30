@@ -3,27 +3,33 @@ using System.Globalization;
 
 class Veiculo
 {
-  public string qtdRodas;
-  public string Cor;
-  public int Ano;
-  public string Modelo;
-  public double valorAtual;
-  public string possuiSeguro;
-  public string possuiPendencia;
+  private int qtdRodas;
+  private string Cor;
+  private int Ano;
+  private string Modelo;
+  private double valorAtual;
+  private bool possuiSeguro;
+  private bool possuiPendencia;
 
-  public Param1()
+  public Veiculo()
   {
-
+    qtdRodas = 4;
+    Cor = "Preto";
+    Ano = 2002;
+    Modelo = "Marea";
+    valorAtual = 10000;
+    possuiSeguro = false;
+    possuiPendencia = true;
   }
 
-  public Param2(int a, string c, double va)
+  public Veiculo(int a, string c, double va)
   {
     Ano = a;
     Cor = c;
     valorAtual = va;
   }
 
-  public Param3(string qr, string c, int a, string m, double va, string ps, string pp)
+  public Veiculo(int qr, string c, int a, string m, double va, bool ps, bool pp)
   {
     qtdRodas = qr;
     Cor = c;
